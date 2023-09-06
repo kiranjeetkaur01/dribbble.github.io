@@ -1,0 +1,876 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* ------creating navbar------- */
+#nav {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* --------nav logo height------ */
+#nav img {
+    height: 20px;
+}
+
+#nav img:hover {
+    cursor: pointer;
+}
+
+/* --------designing left and right part of navbar */
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+#nav-part1 h5 {
+    font-size: 15px;
+    color: #08060a;
+    font-weight: 500;
+}
+
+#nav-part1 h5:hover {
+    cursor: pointer;
+    color: #060507c9;
+
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+#nav-part2 button {
+    padding: 14px 14px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+#nav-part2 #btn2 {
+    background-color: #201f25;
+    color: #fff;
+}
+
+#nav-part2 button:hover {
+    cursor: pointer;
+    background-color: #ffffffd7;
+}
+
+#nav-part2 #btn2:hover {
+    background-color: #201f25b7;
+    color: #fff;
+}
+
+/* ----creating center div for embedding video----- */
+#center {
+    height: 93.6%;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+/* ---------video setting--------- */
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -------created overlay div within center to put black bg on video------- */
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: #0000009d;
+}
+
+/*---------- content in overlay div--------- */
+/*------------creating navbar and putting content in navbar--------------  */
+#info {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#info h4 {
+    background-color: #00000060;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 17px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+#info #first {
+    background-color: #fff;
+    color: #000;
+}
+
+#info h4:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#info #first:hover {
+    background-color: #ffffffd5;
+    color: #000;
+}
+
+#overlay h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#overlay p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 17px;
+    line-height: 25px;
+}
+
+/* -------designing searchbar------- */
+#overlay input {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
+    padding: 20px 14px;
+    border-radius: 50px;
+    outline: none;
+}
+
+/* ------designing below searchbar------ */
+#info2 {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#info2 h3 {
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 13px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.4s;
+
+}
+
+#info2 h4 {
+    color: #fff;
+    border: 1px solid white;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+#info2 h4:hover {
+    border-color: rgba(255, 255, 255, 0.644);
+}
+
+#info2 span {
+    position: absolute;
+    top: 93%;
+    left: 92%;
+}
+
+#info2 span a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* -----------------next page styling---------------- */
+#bottom {
+    width: 100%;
+    height: 150%;
+    padding: 50px;
+    overflow: hidden;
+}
+
+select {
+    top: 112%;
+    left: 15px;
+    position: absolute;
+    border: 2px solid rgba(255, 192, 203, 0.425);
+    padding: 5px 5px;
+    outline: none;
+
+}
+
+option {
+    border: 2px solid pink;
+    padding: 5px 5px;
+    font-size: 15px;
+}
+
+.elem {
+    height: 220px;
+    width: 270px;
+    margin: 17px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; 
+
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* -------------creating effect on picture 1-------------- */
+#cover {
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+    transition: all ease 0.3s;
+}
+
+#cover h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover {
+    bottom: 0;
+}
+
+/* ---------------------creating effect on picture 2--------------- */
+#cover2 {
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+    transition: all ease 0.3s;
+}
+
+#cover2 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover2 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover2 {
+    bottom: 0;
+}
+
+/* ---------------------creating effect on picture 3---------------------- */
+#cover3 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover3 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover3 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover3 {
+    bottom: 0;
+}
+
+/* ------------creating effect on picture 4-------- */
+#cover4 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover4 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover4 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover4 {
+    bottom: 0;
+}
+
+/* ------------- CREATING EFFECT ON PICTURE 5------------ */
+#cover5 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover5 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover5 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover5 {
+    bottom: 0;
+}
+
+/* ------------------PICTURE6--------------- */
+#cover6 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover6 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover6 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover6 {
+    bottom: 0;
+}
+
+/* ---------------PICTURE7---------------- */
+#cover7 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover7 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover7 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover7 {
+    bottom: 0;
+}
+
+/* ---------------picture8---------------- */
+#cover8 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover8 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover8 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover8 {
+    bottom: 0;
+}
+
+/* ----------picture9------------- */
+#cover9 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover9 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover9 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover9 {
+    bottom: 0;
+}
+
+/* -----------------creating effect on picture 10 */
+#cover10 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover10 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover10 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover10 {
+    bottom: 0;
+}
+
+/* ------picture 11-------- */
+#cover11 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover11 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover11 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover11 {
+    bottom: 0;
+}
+
+/* -------------picture 12------------- */
+#cover12 {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: absolute;
+    bottom: -30%;
+    background: linear-gradient(transparent, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 26px;
+    transition: all ease 0.3s;
+}
+
+#cover12 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+#cover12 i {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.elem:hover #cover12 {
+    bottom: 0;
+}
+ #btnn1{
+    position: absolute;
+    top: 246%;
+    left: 33%;
+    padding: 12px 35px;
+    font-size: 16px;
+    background-color: #dd3e7b;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+#btnn1:hover{
+    background-color: #dd3e7bbe;
+}
+#btnn2{
+    position: absolute;
+    top: 246%;
+    left: 51%;
+    padding: 12px 35px;
+    font-size: 16px;
+    background-color: #f082ac00;
+    color: rgb(15, 14, 14);
+    border-radius: 10px;
+    border: none;
+}
+#btnn2:hover{
+    color: #201f25cc;
+}
+
+/* -------------creating footer--------- */
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFB;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    width: 143px;
+    height: 42px;
+    left: 6%;
+    top: 10%;
+    border-radius: 50px;
+}
+
+span {
+    position: absolute;
+    left: 6%;
+    top: 19%;
+}
+
+ footer #icon1 i {
+    position: absolute;
+    left: 6%;
+    top: 31%;
+    font-size: 20px;
+}
+footer #icon1 i:hover {
+    position: absolute;
+    left: 6%;
+    top: 31%;
+    color: rgba(0, 0, 0, 0.678);
+    
+}
+footer #icon2 i {
+    position: absolute;
+    left: 9%;
+    top: 31%;
+    font-size: 20px;
+}
+footer #icon2 i:hover {
+    position: absolute;
+    left: 9%;
+    top: 31%;
+    color: rgba(0, 0, 0, 0.678);
+    
+}
+footer #icon3 i {
+    position: absolute;
+    left: 12%;
+    top: 31%;
+    font-size: 20px;
+}
+footer #icon3 i:hover {
+    position: absolute;
+    left: 12%;
+    top: 31%;
+    color: rgba(0, 0, 0, 0.678);
+    
+}
+footer #icon4 i {
+    position: absolute;
+    left: 15%;
+    top: 31%;
+    font-size: 20px;
+}
+footer #icon4 i:hover {
+    position: absolute;
+    left: 15%;
+    top: 31%;
+    color: rgba(0, 0, 0, 0.678);
+    
+}
+footer #icon5 i {
+    position: absolute;
+    left: 18%;
+    top: 31%;
+    font-size: 20px;
+}
+footer #icon5 i:hover {
+    position: absolute;
+    left: 18%;
+    top: 31%;
+    color: rgba(0, 0, 0, 0.678);
+    
+}
+/* -----------footer list1--------------------------- */
+#footer-content #content1 h3{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-weight: 400;
+}
+#content1 ul{
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    list-style: none;
+    line-height: 33px;
+}
+#content1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#content1 ul li a:hover{
+    cursor: pointer;
+}
+/* ------------footer list2-------------------- */
+#footer-content #content2 h3{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    font-weight: 400;
+}
+#content2 ul{
+    position: absolute;
+    top: 14%;
+    left: 45%;
+    list-style: none;
+    line-height: 33px;
+}
+#content2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#content2 ul li a:hover{
+    cursor: pointer;
+}
+/* ------------------footer list3--------------- */
+#footer-content #content3 h3{
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    font-weight: 400;
+}
+#content3 ul{
+    position: absolute;
+    top: 14%;
+    left: 62%;
+    list-style: none;
+    line-height: 33px;
+}
+#content3 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#content3 ul li a:hover{
+    cursor: pointer;
+}
+/* -------------------------footer list4-------------------- */
+#footer-content #content4 h3{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-weight: 400;
+}
+#content4 ul{
+    position: absolute;
+    top: 14%;
+    left: 75%;
+    list-style: none;
+    line-height: 33px;
+}
+#content4 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#content4 ul li a:hover{
+    cursor: pointer;
+}
+/* ----------------------footer list5------------------- */
+#footer-content #content5 h3{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    font-weight: 400;
+}
+#content5 ul{
+    position: absolute;
+    top: 18%;
+    left: 90%;
+    list-style: none;
+    line-height: 33px;
+}
+#content5 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#content5 ul li a:hover{
+    cursor: pointer;
+}
+footer hr{
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+    bottom: 13%;
+    border-color: rgba(128, 128, 128, 0.089);
+    border-width: 0.001px;
+}
+footer #kiran{
+    position: absolute;
+    bottom:5% ;
+    left:5% ;
+    font-weight: 300;
+}
+footer #bhu{
+    position: absolute;
+    bottom:5% ;
+    right:7% ;
+    font-weight: 300;
+}
+footer h6{
+    position: absolute;
+    bottom:4.5% ;
+    right:5% ;
+    font-size: 18px;
+}
